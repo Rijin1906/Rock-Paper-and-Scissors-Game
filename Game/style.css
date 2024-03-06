@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+.heading{
+  font-size: 30px;
+  font-family: 'Times New Roman';
+  color: black;
+  font-weight: 900;
+  /* text-shadow: 2px 2px 4px black; */
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+.user-choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:3rem;
+}
+button {
+  font-family: 'Times New Roman';
+  font-size: 200px;
+  border: none;
+  border-radius: 50%;
+  padding: 7px;
+}
+.choice:hover {
+  opacity: 0.75;
+  scale: 1.25;
+  /* transform: rotate(10deg); */
+ box-shadow: 4px 4px 4px black;
+  border-radius: 50%;
+ 
+}
+
+#rock {
+  background-color: rgba(255, 0, 77, 0.75);
+  /* animation:basic;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; */
+}
+/* @keyframes basic{
+  from {background-color: rgba(255, 0, 77, 0.75);}
+  to {background-color: white;}
+} */
+#paper {
+  background-color: rgba(235, 244, 0, 0.75);
+}
+#scissor {
+  background-color: rgba(21, 245, 186, 0.75);
+}
+.score-board {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+#user-score {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 4px orangered;
+  text-decoration:none;
+}
+#computer-score {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 4px orangered;
+  text-decoration:none;
+}
+.message {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+#msg {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: inline;
+}
+p {
+   color: white;
+  text-shadow: 2px 2px 4px blue;
+  text-decoration: underline;
+}
+
+/* --------------------------------- MEDIA QUERY----------------------------- */
+/* --------------------EXTRA SMALL SCREENS (PHONES)-------------------------- */
+@media(max-width:320px){
+.heading{
+font-size: 22px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button{
+  font-size: 85px;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+}
+.choice:hover{
+  opacity: 0.75;
+  scale: 1.30;
+ box-shadow: 2px 2px 2px black;
+  border-radius: 50%;
+ 
+}
+.score-board{
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  gap: 4rem;
+}
+#user-score{
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+#computer-score{
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+#msg{
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+}
+
+/* -------------------------- SMALL SCREENS (PHONES AND SMALL TABLETS)------------------- */
+@media only screen and (min-width:320px) and (max-width:768px){
+  .heading{
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  button{
+    font-size: 87px;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .choice:hover{
+    opacity: 0.75;
+    scale: 1.25;
+   box-shadow: 2px 2px 2px black;
+    border-radius: 50%;
+   
+  }
+  .score-board{
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    gap: 4rem;
+  }
+  #user-score{
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+  #computer-score{
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+  #msg{
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+  }
+
+  /* --------------------------------MEDIUM SCREENS (TABLETS)------------------------------- */
+  @media only screen and (min-width:768px) and (max-width:992px){
+    .heading{
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    button{
+      font-size: 90px;
+      border: none;
+      border-radius: 50%;
+      padding: 5px;
+    }
+    .choice:hover{
+      opacity: 0.75;
+      scale: 1.25;
+     box-shadow: 3px 3px 3px black;
+      border-radius: 50%;
+     
+    }
+    .score-board{
+      font-size: 1.7rem;
+      margin-top: 3rem;
+      gap: 4rem;
+    }
+    #user-score{
+      font-size: 2.7rem;
+      text-decoration: none;
+    }
+    #computer-score{
+      font-size: 2.7rem;
+      text-decoration: none;
+    }
+    #msg{
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+    }
+
+    /* --------------------------------LARGE SCREENS (DESKTOPS)---------------------------- */
+    @media only screen and (min-width:992px) and (max-width:1200px){
+      .heading{
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      button{
+        font-size: 200px;
+        border: none;
+        border-radius: 50%;
+        padding: 5px;
+      }
+      .choice:hover{
+        opacity: 0.75;
+        scale: 1.25;
+       box-shadow: 4px 4px 4px black;
+        border-radius: 50%;
+       
+      }
+      .score-board{
+        font-size: 2rem;
+        margin-top: 3rem;
+        gap: 5rem;
+      }
+      #user-score{
+        font-size: 3rem;
+        text-decoration: none;
+      }
+      #computer-score{
+        font-size: 3rem;
+        text-decoration: none;
+      }
+      #msg{
+        font-size: 2rem;
+        padding: 1rem;
+      }
+      }
+      /* --------------------------EXTRA LARGE SCREENS (LARGE SCREENS)----------------------- */
+      @media only screen and (min-width:1200px){
+        .heading{
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        button{
+          font-size: 220px;
+          border: none;
+          border-radius: 50%;
+          padding: 5px;
+        }
+        .choice:hover{
+          opacity: 0.75;
+          scale: 1.25;
+         box-shadow: 4.5px 4.5px 4.5px black;
+          border-radius: 50%;
+         
+        }
+        .score-board{
+          font-size: 2.5rem;
+          margin-top: 3rem;
+          gap: 5rem;
+        }
+        #user-score{
+          font-size: 3.5rem;
+          text-decoration: none;
+        }
+        #computer-score{
+          font-size: 3.5rem;
+          text-decoration: none;
+        }
+        #msg{
+          font-size: 2.5rem;
+          padding: 1rem;
+        }
+        }
